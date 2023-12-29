@@ -34,12 +34,12 @@ const Kupit = ({ onAdd }) => {
       <div className="kupit">
         <h2>Успей купить</h2>
         <div className="product-list">
-          {data.map((item, index) => (
+          {data.map((item) => (
             <div
               className="product"
-              key={item.index }
-              onClick={() => openModal(item)}
-            >
+              key={item.id }
+              onClick={() => openModal(item)} >
+                
               <img className="img" src={item.image} alt={item.name} />
               <div className="price">
                 <p className="price1">{item.price} ₽</p>
@@ -53,12 +53,10 @@ const Kupit = ({ onAdd }) => {
           <h2>Все товары</h2>
         </div>
       </div>
-
       {isModalVisible && (
         <ProductModal
           product={selectedProduct}
           onClose={closeModal}
-          onAdd={onAdd}
         />
       )}
     </div>

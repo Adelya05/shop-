@@ -1,5 +1,5 @@
 .conteiner {
-    width: 1366px;
+    width: 100%;
     height: 100px;
     background-color: antiquewhite;
     display: flex;
@@ -13,3 +13,4 @@
   .Apppa{
     display: flex;
   }
+ 

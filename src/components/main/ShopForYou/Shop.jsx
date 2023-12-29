@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./ShopStyle.scss";
-//import './ShopStyle.scss'
 
 const Shop = () => {
   const [data, setData] = useState([]);

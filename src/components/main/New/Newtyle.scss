@@ -22,10 +22,6 @@
     background: #fefcfc;
     box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.12);
   }
-  .new-product:hover {
-    transform: scale(1.1);
-    transition: all 0.3s;
-  }
   .new-price {
     height: 16px;
     color: var(--UI-red, #080808);

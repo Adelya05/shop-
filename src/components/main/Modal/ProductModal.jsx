@@ -1,11 +1,8 @@
 import React from "react";
 import "./modal.css";
 
-const ProductModal = ({ product, onClose, onAdd }) => {
-  const handleAddToCart = () => {
-    onAdd(product);
-    console.log(`Продукт добавлен ` );
-  };
+const ProductModal = ({ product, onClose }) => {
+  
 
   return (
     <div className="modal">
@@ -26,7 +23,7 @@ const ProductModal = ({ product, onClose, onAdd }) => {
         <h3>Marple</h3>
 
         <p className="modal-desc">{product.description}</p>
-        <button className="delete" onClick={handleAddToCart}>
+        <button className="delete" >
           В корзину
         </button>
       </div>
